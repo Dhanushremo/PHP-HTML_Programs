@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <fieldset>
+        <legend align="center">Student Profile</legend>
+        <form method="post" action="studentprofile.php" enctype="multipart/form-data">
+            <table align="center" border="0" >
+                <br>
+                <!-- <tr>
+                    <td colspan="2" align="center">Student Profile</td>
+                    
+                </tr> -->
+                <tr>
+                    <td>
+                        <lable>First Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="fn" size="40" minlength="5" placeholder="Ex.Danger">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Second Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="sn" size="40" minlength="5" placeholder="Ex.Dhanush">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Last Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="ln" size="40"  minlength="5" placeholder="Ex.Remo" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Sur Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="srn" size="40" minlength="5" placeholder="Ex.R" >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Gender</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="gen" value="Male">
+                        <lable>Male</lable>
+                        <input type="radio" name="gen" value="Female">
+                        <lable>FeMale</lable>
+                        <input type="radio" name="gen" value="Custom">
+                        <lable>Custom</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Date</lable>
+                    </td>
+                    <td>
+                        <input type="date" name="date!">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>PhoneNumber</lable>
+                    </td>
+                    <td>
+                        <input type="tel" name="ph" pattern="[0-9]{10}" placeholder="Ex.8790820213">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Email-ID</lable>
+                    </td>
+                    <td>
+                        <input type="email" name="mail"  placeholder="Ex.remogdn@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Adress</lable>
+                    </td>
+                    <td>
+                       <textarea  name="address" placeholder="Enter your address here!!"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Upload Your Photo</label>
+                    </td>
+                    <td colspan="2" align="centers">
+                        <input type="file" name="image" accept="image/*">
+                       
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <br>
+                            <input type="submit" value="SUBMIT">
+                             <input type="reset" value="RESET">
+     
+                         </td>
+                    </tr>
+            
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #242a3e;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: #e1e6ef;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        table {
+            width: 100%;
+        }
+
+        label {
+            font-weight:  bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+            margin-left: 10%;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        td {
+            text-align: left;
+        }
+        td[colspan="2"] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="SignUP.php" method="post" enctype="application/x-www-form-urlencoded">
+            <table>
+                <tr>
+                    <td colspan="2" align="center">
+                        <label>GET Registered Here!!</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fn" placeholder="Enter your first name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Second Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="sn" placeholder="Enter your second name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="ln" placeholder="Enter your last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>SurName</label>
+                    </td>
+                    <td>
+                        <input type="text" name="srnn" placeholder="Enter your surname">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Gender</label><br>
+                        <input type="radio" name="gen" value="Male"> Male
+                        <input type="radio" name="gen" value="Female"> Female
+                        <input type="radio" name="gen" value="Custom"> Custom
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date of Birth</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date!">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="ph" pattern="[0-9]{10}" placeholder="Ex. 8790820213">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email ID</label>
+                    </td>
+                    <td>
+                        <input type="email" name="mail" placeholder="Ex. example@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>UserName</label>
+                    </td>
+                    <td>
+                        <input type="text" name="uname" placeholder="Dhanush588">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" placeholder="---------------------">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Re-Enter Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="rpwd" placeholder="---------------------">
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td>
+                        <textarea name="address" rows="3" placeholder="Enter your address here"></textarea>
+                    </td>
+                </tr> -->
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit"value="Sign Up">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
